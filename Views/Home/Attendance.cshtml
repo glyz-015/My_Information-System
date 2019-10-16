@@ -1,0 +1,29 @@
+@{
+  var mem = (List<Myembro>)ViewData["mem"];
+}
+
+<h2>Attendance</h2>
+
+<p id="nowdate"></p>
+
+  <table class="table table-hover" align="right">
+      <thead>
+        <tr>
+          <th> </th>
+       </tr>
+     </thead>
+     <tbody>
+       @foreach (var item in mem)
+       {
+         <tr>
+           <td><input type="checkbox" name="attendance" id="att">@item.id</td>
+           <td>@item.fname @item.lname @item.mname @item.suffix</td>
+         </tr>
+       }
+     </tbody>
+  </table>
+
+  <script>
+    var d = new Date()
+    document.getElementById("nowdate").innerHTML = d;
+  </script>

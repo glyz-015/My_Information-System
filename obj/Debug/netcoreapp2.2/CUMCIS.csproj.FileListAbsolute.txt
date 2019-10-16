@@ -1,0 +1,135 @@
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.deps.json
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.json
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.dev.json
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.dll
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csprojAssemblyReference.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CoreCompileInputs.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfoInputs.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.input.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.output.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorCoreGenerate.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CopyComplete
+C:\Users\Glysdi Oandasan\Documents\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.deps.json
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.json
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.dev.json
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.dll
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csprojAssemblyReference.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CoreCompileInputs.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfoInputs.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.input.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.output.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorCoreGenerate.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CopyComplete
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.deps.json
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.json
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.dev.json
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.dll
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csprojAssemblyReference.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CoreCompileInputs.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfoInputs.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.input.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.output.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorCoreGenerate.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\MemberInfo.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CopyComplete
+C:\Users\Glysdi Oandasan\Downloads\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\People.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\UserAccounts.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.deps.json
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.json
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.runtimeconfig.dev.json
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.dll
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\bin\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csprojAssemblyReference.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CoreCompileInputs.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfoInputs.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.AssemblyInfo.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.input.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.TagHelpers.output.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorCoreGenerate.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\People.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\UserAccounts.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cache
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.RazorTargetAssemblyInfo.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.Views.pdb
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.dll
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.pdb
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\CUMCIS.csproj.CopyComplete
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Modify.g.cshtml.cs
+C:\Users\Glysdi Oandasan\My Documents\myproject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Members.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Members.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Modify.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Attendance.g.cshtml.cs

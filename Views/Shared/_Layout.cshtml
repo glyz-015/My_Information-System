@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - The United Methodist Church</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  padding-left: 200px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+
+<body>    
+    <div class="sidenav">
+        <a href="\home">Logo</a>
+    <!--<img src="~/images/logo1.jpg" style="height: 100px; width: 100px">-->
+
+  <a href="\Home\People">People</a>
+  <a href="#contact">Budget</a>
+  <a href="\Home\Attendance">Attendance</a>
+  <a href="#clients">Schedule</a>
+  <a href="#contact">Events</a>
+  <a href="#contact">Print</a>
+</div>
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2019 - The Colibangbang United Methodist Church Information System <br>
+                <a>GodLovesYouSoDoI</a>
+            </div>
+        </footer>
+    </div>
+
+    
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
+    
+<!--<div id="wrapper">
+    <div id="header">
+            <h1>HEADING</h1>
+    </div>
+
+    <<div class="sidenav">
+        <a href="#about">People</a>
+        <a href="#services">Budget</a>
+        <a href="#clients">Schedule</a>
+        <a href="#contact">Attendance</a>
+        <a href="#contact">Events</a>
+        <a href="#contact">Print</a>
+    </div>
+
+    <div id="content">
+        <div class= "btn-group btn-group-justified">
+            <a href="/home/People" class="btn btn-primary">PEOPLE</a>
+            <a href="#" class="btn btn-primary">ATTENDANCE</a>
+            <a href="#" class="btn btn-primary">BUDGET</a>
+        </div>
+        <div class= "btn-group btn-group-justified">
+            <a href="#" class="btn btn-primary">SCHEDULE</a>
+            <a href="#" class="btn btn-primary">EVENTS</a>
+            <a href="#" class="btn btn-primary">PRINT</a>
+        </div>
+  
+    </div>
+</div>
+
+
+  
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+-->
+</body>
+</html>
