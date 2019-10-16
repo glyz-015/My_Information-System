@@ -38,6 +38,14 @@ namespace CUMCIS.Controllers
             return View();
         }
 
+        [HttpPost]
+        public RedirectResult Delete (int id)
+        {
+           InfoSys me = new InfoSys ();
+           me.deleteMyembro(id);
+           return Redirect("/home/modify");
+        }
+
         public IActionResult UserAccounts ()
         {
             InfoSys os = new InfoSys();

@@ -1,5 +1,6 @@
 @{
   var mem = (List<Myembro>)ViewData["mem"];
+  List<Myembro> myembros = (List<Myembro>) ViewData["Myembro"];
 }
 
 <h2>Modify</h2>
@@ -8,6 +9,7 @@
   <li><a href="\Home\Modify">Modify</a></li>
   <li><a href="\Home\UserAccounts">User Accounts</a></li>
 </ul>
+
 
   <table class="table table-hover">
       <thead>
@@ -29,7 +31,12 @@
            <td>@item.contact</td>
            <td>@item.email</td>
            <td><a href="/home/edit?id=@item.id" class="btn btn-primary">Edit</a></td>
-           <td><button type="button" class="btn btn-danger">Delete</button></td>
+
+           <form action="/home/delete" method="post">
+           <td><input type="hidden" name = "id" value="@item.id"></td>
+           <td><input type="submit" class="btn btn-danger" value="Delete"></td>
+           </form>
+
            <td><button type="button" class="btn btn-info">Archive</button></td>
          </tr>
        }

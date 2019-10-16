@@ -1,10 +1,22 @@
 @{
   var mem = (List<Myembro>)ViewData["mem"];
+    List<Myembro> myembros = (List<Myembro>) ViewData["Myembro"];
 }
 
 <h2>Attendance</h2>
 
 <p id="nowdate"></p>
+
+@if(myembros.Count() == 0)
+{
+  <h2>Member Info not found.</h2>
+}
+
+<form action="/home/attendance" method="get">
+  <div class="form-group"> 
+    <input type="text" name="search" class="form-control" placeholder="Search ..."> 
+  </div>
+</form>
 
   <table class="table table-hover" align="right">
       <thead>
@@ -25,5 +37,5 @@
 
   <script>
     var d = new Date()
-    document.getElementById("nowdate").innerHTML = d;
+    document.getElementById("nowdate").innerHTML = d.getFullYear d.getMonth, d.getDay;
   </script>

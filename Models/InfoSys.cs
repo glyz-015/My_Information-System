@@ -15,6 +15,8 @@ namespace CUMCIS.Models
             return con;
         }
 
+        public List<Myembro> myems = new List<Myembro>();
+
         public void addMyembroToDB (Myembro mem)
         {
             var con = this.CreateConnection ();
@@ -29,6 +31,15 @@ namespace CUMCIS.Models
             var con = this.CreateConnection();
             string cmdText = $"update myembro set fname='{mem.fname}', lname='{mem.lname}', mname='{mem.mname}', suffix='{mem.suffix}', gender='{mem.gender}', bdate='{mem.bdate}', age='{mem.age}', grp='{mem.grp}', contact='{mem.contact}', email='{mem.email}', address='{mem.address}', stat='{mem.stat}', marital='{mem.marital}', husbandname='{mem.husbandname}', wifname='{mem.wifename}', children='{mem.children}', weddinganniv='{mem.anniv}', dod='{mem.dod}',  where id = {mem.id}";
             MySqlCommand cmd = new MySqlCommand(cmdText, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void deleteMyembro (int id)
+        {
+            var con = this.CreateConnection();
+            string cmdText = $"delete from myembro where id = {id}";
+            MySqlCommand cmd = new MySqlCommand (cmdText, con);
             cmd.ExecuteNonQuery();
             con.Close();
         }
