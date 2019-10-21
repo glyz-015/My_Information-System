@@ -44,6 +44,24 @@ namespace CUMCIS.Models
             con.Close();
         }
 
+       /* public List<Myembro> SearchName(string searchpamore)
+        {
+            List<Myembro> mem = new List<Myembro>();
+            var con = this.CreateConnection();
+
+            string cmdText = $"select * from myembro where name like '%{searchpamore}%';";
+            MySqlCommand cmd = new MySqlCommand(cmdText, con);
+
+            var result = cmd.ExecuteReader();
+            while(result.Read())
+            {
+                Myembro m = new Myembro
+            }
+
+            con.Close();
+            return mem;
+        }*/
+
         public List<Myembro> getMyembroFromDB()
         {
             List<Myembro> mem = new List<Myembro> ();
@@ -82,7 +100,7 @@ namespace CUMCIS.Models
             mem.lname = result ["lname"].ToString();
             mem.suffix = result ["suffix"].ToString();
             mem.gender = result ["gender"].ToString();
-            //mem.bdate = result ["bdate"].ToString("yyyy-MM-dd HH:mm:ss");
+            mem.bdate = Convert.ToDateTime(result["bdate"]);
             mem.age = Convert.ToInt32(result["age"]);
             mem.grp = result ["grp"].ToString();
             mem.contact = result ["contact"].ToString();
@@ -96,7 +114,6 @@ namespace CUMCIS.Models
             mem.children = result ["children"].ToString();
             //mem.anniv = result ["weddinganniv"].ToString();
             //mem.dod = Convert.ToInt32(result["dod"]);
-            result ["gender"].ToString();
         }
         con.Close();
         return mem;

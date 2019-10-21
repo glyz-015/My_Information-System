@@ -1,51 +1,52 @@
 @{
-    var mem = (Myembro)ViewData["mem"];
+    var mems = (Myembro)ViewData["myembro"];
+    var bdate = (string)ViewData["bdate"];
 }
 
 <h2>Edit Member Record</h2>
 
 <form action="/home/Edit" method="post">
   <label for="fname">Name: </label>
-  <input type="text" id="id" required placeholder="id" value="@mem.id" name="id" size="30">
-  <input type="text" id="fname" required placeholder="First Name" value="@mem.fname" name="fname" size="30">
-  <input type="text" id="lname" required placeholder="Last Name" value="@mem.lname" name="lname" size="30"> 
-  <input type="text" id="mname" placeholder="Middle Name" value="@mem.mname" name="mname" size="30"> 
-  <input type="text" id="suffix" placeholder="Suffix" value="@mem.suffix" name="suffix" size="7"> <br>
+  <input type="text" id="id" required placeholder="id" value="@mems.id" name="id" size="30" hidden>
+  <input type="text" id="fname" required placeholder="First Name" value="@mems.fname" name="fname" size="30">
+  <input type="text" id="lname" required placeholder="Last Name" value="@mems.lname" name="lname" size="30"> 
+  <input type="text" id="mname" placeholder="Middle Name" value="@mems.mname" name="mname" size="30"> 
+  <input type="text" id="suffix" placeholder="Suffix" value="@mems.suffix" name="suffix" size="7"> <br>
   <label for="gender">Gender:</label> 
-  <input type="radio" name="gender" value="Male"> Male
-  <input type="radio" name="gender" value="Female"> Female 
+  <input type="radio" name="gender" value="Male" checked="@mems.gender == 'Male'"> Male
+  <input type="radio" name="gender" value="Female" checked="@mems.gender == 'Female'"> Female 
   <br>
   <label for="bdate">Birthday</label>
-  <input type="date" id="bdate" name="bdate" value="@mem.bdate" onChange="onChangeBirthDate(this.form, event.target.value)">
+  <input type="date" id="bdate" name="bdate" value="@bdate" onChange="onChangeBirthDate(this.form, event.target.value)">
   <label for="age">Age</label>
-  <input type="int" id="age" placeholder="Age" value="@mem.age" name="age" size="5">
-  <input type="text" id="grp" placeholder="Group" value="@mem.grp" name="grp"> <br> 
+  <input type="int" id="age" placeholder="Age" value="@mems.age" name="age" size="5">
+  <input type="text" id="grp" placeholder="Group" value="@mems.grp" name="grp"> <br> 
   <label for="contact">Contact: </label>
-  <input type="text" id="contact" placeholder="Phone Number" value="@mem.contact" name="contact" size="50"> <br>
+  <input type="text" id="contact" placeholder="Phone Number" value="@mems.contact" name="contact" size="50"> <br>
 
   <label for="email">Email: </label>
-  <input type="text" id="email" placeholder="Email Address" value="@mem.email" name="email" size="50"> <br>
+  <input type="text" id="email" placeholder="Email Address" value="@mems.email" name="email" size="50"> <br>
   <label for="address">Address: </label>
-  <input type="text" id="address" placeholder="Address" value="@mem.address" name="address" size="50"> <br>
+  <input type="text" id="address" placeholder="Address" value="@mems.address" name="address" size="50"> <br>
   <label for="group">Status:</label> 
-  <input type="radio" name="stat" value="Member"> Member
-  <input type="radio" name="stat" value="Visitor"> Visitor <br>
+  <input type="radio" name="stat" checked="@mems.stat == 'Member'" value="Member"> Member
+  <input type="radio" name="stat" checked = "@mems.stat== 'Visitor'" value="Visitor"> Visitor <br>
 
   <label for="maritalstatus">Marital Status</label>
-  <input type="radio" name="marital" value="Single"> Single <br>
-  <input type="radio" name="marital" value="Married"> Married <br>
-  <input type="radio" name="marital" value="Widow"> Widow <br>
+  <input type="radio" name="marital" checked="@mems.marital == 'Single'" value="Single"> Single <br>
+  <input type="radio" name="marital" checked="@mems.marital=='Married'" value="Married"> Married <br>
+  <input type="radio" name="marital" checked="@mems.marital=='Widow'" value="Widow"> Widow <br>
 
   <label for="anniv">Wedding Anniversary</label>
-  <input type="date" id="anniv" value="@mem.anniv" name="anniv"><br>
+  <input type="date" id="anniv" value="@mems.anniv" name="anniv"><br>
   <label for="husband" >Husband Name: </label>
-  <input type="text" id="husband" placeholder="Husband Name" value="@mem.husbandname" name="husband" size="50"> <br>
+  <input type="text" id="husband" placeholder="Husband Name" value="@mems.husbandname" name="husband" size="50"> <br>
   <label for="wife">Wife Name: </label>
-  <input type="text" id="wife" placeholder="Wife Name" value="@mem.wifename" name="wife" size="50"> <br>
+  <input type="text" id="wife" placeholder="Wife Name" value="@mems.wifename" name="wife" size="50"> <br>
   
     <div class="form-group">
     <label for="children">Children(s)</label>
-    <textarea class="form-control" id="children" value="@mem.children" rows="3"></textarea>
+    <textarea class="form-control" id="children" value="@mems.children" rows="3"></textarea>
   </div><br>
   <br>
   <br>
@@ -56,8 +57,8 @@
 <br>
 
 
-  <button onclick="alert ('SAVED!')" type="submit">Save</button>
-  <button type="reset">Clear</button>
+  <button onclick="alert ('Updated!')" type="submit">Update</button>
+  <button type="button" action="/home/modify">Cancel</button>
 </form>
 
 

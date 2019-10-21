@@ -60,10 +60,28 @@ namespace CUMCIS.Controllers
 
         }
 
+        /*[HttpGet]
+        public IActionResult Search(string searchpamore)
+        {
+            InfoSys os = new InfoSys
+            ViewData["mem"] = os.SearchName(searchpamore);
+            return View(); 
+        }*/
+
         public IActionResult Edit (int id)
         {
             InfoSys mem = new InfoSys ();
-            ViewData["myembro"] = mem.getmyembro(id);
+            var member = mem.getmyembro(id);
+            if(member.bdate != null)
+            {
+                var month = "";
+                if(member.bdate.Month < 10){
+                    month = "0" + member.bdate.Month;
+                }
+                ViewData["bdate"] = member.bdate.Year + "-" + month + "-" + member.bdate.Day;
+            }
+           
+            ViewData["myembro"] = member;
             return View(); 
         }
 
