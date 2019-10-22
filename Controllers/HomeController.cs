@@ -60,13 +60,13 @@ namespace CUMCIS.Controllers
 
         }
 
-        /*[HttpGet]
+        [HttpGet]
         public IActionResult Search(string searchpamore)
         {
-            InfoSys os = new InfoSys
-            ViewData["mem"] = os.SearchName(searchpamore);
+            InfoSys mem = new InfoSys ();
+            ViewData["mem"] = mem.SearchName(searchpamore);
             return View(); 
-        }*/
+        }
 
         public IActionResult Edit (int id)
         {
@@ -80,7 +80,6 @@ namespace CUMCIS.Controllers
                 }
                 ViewData["bdate"] = member.bdate.Year + "-" + month + "-" + member.bdate.Day;
             }
-           
             ViewData["myembro"] = member;
             return View(); 
         }
@@ -107,11 +106,11 @@ namespace CUMCIS.Controllers
             newmem.stat = stat;
             newmem.mname = mname;
             newmem.marital = marital;
-            newmem.husbandname = husbandname;
-            newmem.wifename = wifename;
-            newmem.children = children;
-            newmem.anniv = anniv;
-            newmem.dod = dod;
+            //newmem.husbandname = husbandname;
+            //newmem.wifename = wifename;
+            //newmem.children = children;
+            //newmem.anniv = anniv;
+            //newmem.dod = dod;
             mi.UpdateMyembro (newmem);
             return Redirect("/Home/Members");
         }

@@ -11,24 +11,23 @@
   <li><a href="\Home\UserAccounts">User Accounts</a></li>
 </ul>
 
-<form action="/home/search" method="get" style="margin-top: 20px">
+<!--<form action="/home/modify" method="get" style="margin-width: 50%">
   <div class="form-group">
       <input type="text" name="searchmo" class="form-control" placeholder="Search Name....">
   </div>
   <input type="submit" class="btn btn-primary" value="Search">
-</form>
+</form>-->
 
-  <table class="table table-hover">
-      <thead>
-        <tr>
+<input type="text" id="searchpamore" onkeyup="myFunction()" placeholder="Search names....">
+
+  <table class="table table-hover" id="TableKo">
+        <tr class="header"> 
           <th> </th>
           <th>Name</th>
           <th>Address</th>
           <th>Contact</th>
           <th>Email</th>
        </tr>
-     </thead>
-     <tbody>
        @foreach (var item in mem)
        {
          <tr>
@@ -44,8 +43,58 @@
            <td><input type="submit" class="btn btn-danger" value="Delete"></td>
            </form>
 
+        
+        <!--<div class = "container">
+            <td><input name = "id" value="@item.id"></td>
+            <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button></td>
+           <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">STOP!!</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Are you sure you want to DELETE this record?</p>
+                        
+                        <form action="/home/delete" method="post">
+                        <input type="text" name="id" value="@item.id">
+                        <input type="submit" class="btn btn-default" value="Yes">
+                        </form>
+                        
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                      </div>
+                      
+                    </div>
+                  </div>  
+           </div>
+        </div>-->
+
            <td><button type="button" class="btn btn-info">Archive</button></td>
          </tr>
        }
-     </tbody>
   </table>
+
+
+  <script>
+    function myFunction(){
+      var input, filter, table, tr, td, x, txtValue;
+      input = document.getElementById ("searchpamore");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("TableKo");
+      tr = table.getElementsByTagName("tr");
+
+      for (x=0; x < tr.lenth; x++){
+        td = tr[x].getElementsByTagName("td")[0];
+        if (td){
+          txtValue=td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1){
+            tr [i].style.display = "";
+          } else {
+            tr[x].style.display="none";
+          }
+        }
+      }
+
+    }
+  </script>
