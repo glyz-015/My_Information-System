@@ -31,6 +31,11 @@ namespace CUMCIS.Controllers
             return View();
         }
 
+        public IActionResult Search()
+        {
+            return View();
+        }
+
         public IActionResult Attendance()
         {
             InfoSys os = new InfoSys();
@@ -60,7 +65,7 @@ namespace CUMCIS.Controllers
 
         }
 
-        [HttpGet]
+       [HttpPost]
         public IActionResult Search(string searchpamore)
         {
             InfoSys mem = new InfoSys ();
@@ -72,27 +77,33 @@ namespace CUMCIS.Controllers
         {
             InfoSys mem = new InfoSys ();
             var member = mem.getmyembro(id);
+
             if(member.bdate != null)
             {
                 var month = "";
                 if(member.bdate.Month < 10){
                     month = "0" + member.bdate.Month;
+                    ViewData["bdate"] = member.bdate.Year + "-" + month + "-" + member.bdate.Day;
                 }
-                ViewData["bdate"] = member.bdate.Year + "-" + month + "-" + member.bdate.Day;
+                else
+                {
+                    ViewData["bdate"] = member.bdate.Year + "-" + member.bdate.Month + "-" + member.bdate.Day;
+                }
             }
+            
             ViewData["myembro"] = member;
             return View(); 
         }
 
 
         [HttpPost]
-      public RedirectResult Edit (int id, string fname, string lname, string suffix, string gender, DateTime bdate, int age, string grp, 
+      public RedirectResult Update (int memid, string fname, string lname, string suffix, string gender, DateTime bdate, int age, string grp, 
       string contact, string email, string address, string stat, string mname, string marital, string husbandname, string wifename, 
       string children, DateTime anniv, DateTime dod)
         {
             InfoSys mi = new InfoSys();
             Myembro newmem = new Myembro();
-            newmem.id = id;
+            newmem.id = memid;;
             newmem.fname = fname;
             newmem.lname = lname;
             newmem.suffix = suffix;
@@ -106,13 +117,13 @@ namespace CUMCIS.Controllers
             newmem.stat = stat;
             newmem.mname = mname;
             newmem.marital = marital;
-            //newmem.husbandname = husbandname;
-            //newmem.wifename = wifename;
-            //newmem.children = children;
-            //newmem.anniv = anniv;
-            //newmem.dod = dod;
+            newmem.husbandname = husbandname;
+            newmem.wifename = wifename;
+            newmem.children = children;
+            newmem.anniv = anniv;
+            newmem.dod = dod;
             mi.UpdateMyembro (newmem);
-            return Redirect("/Home/Members");
+            return Redirect("/Home/Modify");
         }
         
 
@@ -143,7 +154,7 @@ namespace CUMCIS.Controllers
             newmem.anniv = anniv;
             newmem.dod = dod;
             mi.addMyembroToDB (newmem);
-            return Redirect("/Home/Members");
+            return Redirect("/Home/Modify");
         }
 
     }

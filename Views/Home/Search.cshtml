@@ -1,0 +1,45 @@
+@{
+    var mem = (List<Myembro>)ViewData["mem"];
+}
+  
+<h2>Modify</h2>
+<ul class="breadcrumb">
+  <li><a href="\Home\Members">Add Member</a></li>
+  <li><a href="\Home\Modify">Modify</a></li>
+  <li><a href="\Home\UserAccounts">User Accounts</a></li>
+</ul>
+
+@if(mem.Count() == 0)
+{
+    <h3>NO RECORDS FOUND!!</h3>
+}
+
+
+<table class="table table-hover" id="TableKo">
+        <tr class="header"> 
+          <th> </th>
+          <th>Name</th>
+          <th>Group</th>
+          <th>Address</th>
+          <th>Contact</th>
+          <th>Email</th>
+       </tr>
+       @foreach (var item in mem)
+       {
+         <tr>
+           <td>@item.id</td>
+           <td>@item.fname @item.lname </td> 
+           <td>@item.grp</td>
+           <td>@item.address</td>
+           <td>@item.contact</td>
+           <td>@item.email</td>
+           <td><a href="/home/edit?id=@item.id" class="btn btn-primary">Edit</a></td>
+
+           <form action="/home/delete" method="post">
+           <td><input type="hidden" name = "id" value="@item.id"></td>
+           <td><input type="submit" class="btn btn-danger" value="Delete"></td>
+           </form>
+            <td><button type="button" class="btn btn-info">Archive</button></td>
+          </tr>
+        }
+    </table>

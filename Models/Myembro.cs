@@ -10,8 +10,9 @@ namespace CUMCIS.Models
         public string lname {get; set;}
         public string suffix {get; set;}
         public string gender {get; set;}
-        [DisplayFormat(DataFormatString = "{0:yyyy-mm-dd}", ApplyFormatInEditMode = true)]
+        
         public DateTime bdate {get; set;}
+        [DisplayFormat(DataFormatString = "{0:yyyy-mm-dd}", ApplyFormatInEditMode = true)]
         public int age {get; set;}
         public string grp {get; set;}
         public string contact {get; set;}

@@ -21,10 +21,10 @@
   <label for="bdate">Birthday</label>
   <input type="date" id="bdate" name="bdate" onChange="onChangeBirthDate(this.form, event.target.value)">
   <label for="age">Age</label>
-  <input type="int" id="age" placeholder="Age" name="age" size="5">
-  <input type="text" id="grp" placeholder="Group" name="grp"> <br> 
+  <input type="int" id="age" readonly placeholder="Age" name="age" size="5">
+  <input type="text" id="grp" readonly placeholder="Group" name="grp"> <br> 
   <label for="contact">Contact: </label>
-  <input type="text" id="contact" placeholder="Phone Number" name="contact" size="50"> <br>
+  <input type="tel" maxlength="11" id="contact" placeholder="Phone Number" name="contact" size="50"> <br>
 
   <label for="email">Email: </label>
   <input type="text" id="email" placeholder="Email Address" name="email" size="50"> <br>

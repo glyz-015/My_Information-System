@@ -133,3 +133,4 @@ C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razo
 C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Modify.g.cshtml.cs
 C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
 C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Attendance.g.cshtml.cs
+C:\Users\Glysdi Oandasan\Documents\MyProject\CUMCIS\obj\Debug\netcoreapp2.2\Razor\Views\Home\Search.g.cshtml.cs

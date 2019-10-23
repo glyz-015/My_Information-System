@@ -29,7 +29,7 @@ namespace CUMCIS.Models
         public void UpdateMyembro(Myembro mem)
         {
             var con = this.CreateConnection();
-            string cmdText = $"update myembro set fname='{mem.fname}', lname='{mem.lname}', mname='{mem.mname}', suffix='{mem.suffix}', gender='{mem.gender}', bdate='{mem.bdate}', age='{mem.age}', grp='{mem.grp}', contact='{mem.contact}', email='{mem.email}', address='{mem.address}', stat='{mem.stat}', marital='{mem.marital}', husbandname='{mem.husbandname}', wifname='{mem.wifename}', children='{mem.children}', weddinganniv='{mem.anniv}', dod='{mem.dod}',  where id = {mem.id}";
+            string cmdText = $"update myembro set fname='{mem.fname}', lname='{mem.lname}', mname='{mem.mname}', suffix='{mem.suffix}', gender='{mem.gender}', bdate='{mem.bdate.ToString("yyyy-MM-dd HH:mm:ss")}', age={mem.age}, grp='{mem.grp}', contact='{mem.contact}', email='{mem.email}', address='{mem.address}', stat='{mem.stat}', marital='{mem.marital}', husbandname='{mem.husbandname}', wifename='{mem.wifename}', children='{mem.children}', weddinganniv='{mem.anniv.ToString("yyyy-MM-dd HH:mm:ss")}', dod='{mem.dod.ToString("yyyy-MM-dd HH:mm:ss")}' where id={mem.id}";
             MySqlCommand cmd = new MySqlCommand(cmdText, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -49,15 +49,22 @@ namespace CUMCIS.Models
             List<Myembro> mem = new List<Myembro>();
             var con = this.CreateConnection();
 
-            string cmdText = $"select * from myembro where fname like '%{searchpamore}%';";
+            string cmdText = $"select * from myembro where fname like '%{searchpamore}%'";
+
             MySqlCommand cmd = new MySqlCommand(cmdText, con);
 
             var result = cmd.ExecuteReader();
             while(result.Read())
             {
                 Myembro m = new Myembro ();
+                m.id = Convert.ToInt32(result["id"]);
                 m.fname = result["fname"].ToString();
                 m.lname = result["lname"].ToString();
+                m.grp = result ["grp"].ToString();
+                m.suffix = result ["suffix"].ToString();
+                m.address = result ["address"].ToString();
+                m.contact = result ["contact"].ToString();
+                m.email = result ["email"].ToString();
                 mem.Add(m);
             }
 
@@ -78,6 +85,7 @@ namespace CUMCIS.Models
                 memb.id = Convert.ToInt32(result["id"]);
                 memb.fname = result ["fname"].ToString();
                 memb.lname = result ["lname"].ToString();
+                memb.grp = result ["grp"].ToString();
                 memb.suffix = result ["suffix"].ToString();
                 memb.address = result ["address"].ToString();
                 memb.contact = result ["contact"].ToString();

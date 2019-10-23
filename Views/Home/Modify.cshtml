@@ -11,19 +11,20 @@
   <li><a href="\Home\UserAccounts">User Accounts</a></li>
 </ul>
 
-<!--<form action="/home/modify" method="get" style="margin-width: 50%">
+<form action="/home/Search" method ="post" style="margin-width: 50%">
   <div class="form-group">
-      <input type="text" name="searchmo" class="form-control" placeholder="Search Name....">
+      <input type="text" name="searchpamore" class="form-control" placeholder="Search Name....">
   </div>
   <input type="submit" class="btn btn-primary" value="Search">
-</form>-->
+</form>
 
-<input type="text" id="searchpamore" onkeyup="myFunction()" placeholder="Search names....">
+
 
   <table class="table table-hover" id="TableKo">
         <tr class="header"> 
           <th> </th>
           <th>Name</th>
+          <th>Group</th>
           <th>Address</th>
           <th>Contact</th>
           <th>Email</th>
@@ -33,6 +34,7 @@
          <tr>
            <td>@item.id</td>
            <td>@item.fname @item.lname </td> 
+           <td>@item.grp</td>
            <td>@item.address</td>
            <td>@item.contact</td>
            <td>@item.email</td>
@@ -70,10 +72,10 @@
            </div>
         </div>-->
 
-           <td><button type="button" class="btn btn-info">Archive</button></td>
-         </tr>
-       }
-  </table>
+            <td><button type="button" class="btn btn-info">Archive</button></td>
+          </tr>
+        }
+    </table>
 
 
   <script>
