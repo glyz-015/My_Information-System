@@ -6,7 +6,7 @@
 <h2>Edit Member Record</h2>
 
 <form action="/home/Update" method="post" enctype="multipart/form-data">
-  <input type="text" id="id" hidden required placeholder="id" value=@mems.id name="memid" size="30">
+  <input type="num" id="id" hidden required placeholder="id" value=@mems.id name="memid" size="30">
   <label for="fname">Name: </label>
   <input type="text" id="fname" required placeholder="First Name" value="@mems.fname" name="fname" size="30">
   <input type="text" id="lname" required placeholder="Last Name" value="@mems.lname" name="lname" size="30"> 
@@ -22,7 +22,7 @@
   <input type="int" id="age" readonly placeholder="Age" value="@mems.age" name="age" size="5">
   <input type="text" id="grp" readonly placeholder="Group" value="@mems.grp" name="grp"> <br> 
   <label for="contact">Contact: </label>
-  <input type="number" id="contact" placeholder="Phone Number" value="@mems.contact" name="contact" size="50"> <br>
+  <input type="tel" maxlength="11" id="contact" placeholder="Phone Number" value="@mems.contact" name="contact" size="50"> <br>
 
   <label for="email">Email: </label>
   <input type="text" id="email" placeholder="Email Address" value="@mems.email" name="email" size="50"> <br>
@@ -35,7 +35,50 @@
   <label for="maritalstatus">Marital Status</label>
   <input type="radio" name="marital" value="Single" @(mems.marital == "Single" ? "checked=true" : "")> Single 
   <input type="radio" name="marital" value="Married" @(mems.marital== "Married" ? "checked=true" : "")> Married 
-  <input type="radio" name="marital" value="Widow" @(mems.marital == "Widow" ? "checked=true" : "")> Widow <br>
+  <input type="radio" name="marital" value="Widow" @(mems.marital == "Widow" ? "checked=true" : "")> Widow
+  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Add Children</button>
+  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal" @(mems.marital == "Single" ? "style=display:none" :"" ) >Add Husband</button>
+  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal" @(mems.marital == "Single" ? "style=display:none" :"" ) >Add Wife</button>
+
+
+
+<!--MODAL
+<div class = "container">
+ <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Add Children</button>
+    <div class="modal fade" id="myModal" role="dialog">
+      
+                  <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Add Children</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form action="/home/addchildren" method = "post">
+                        <input type="num" hidden id="id" required placeholder="id" value=@mems.id name="memid" size="4">
+                        <input type="text" id="fname" readonly required placeholder="First Name" value="@mems.fname" name="fname" size="30">
+                        <input type="text" id="lname" readonly required placeholder="Last Name" value="@mems.lname" name="lname" size="30"> 
+                        <br>
+                        <label for="fname">Name: </label>
+                        <input type="text" id="fname" required placeholder="First Name" name="fname" size="30">
+                        <input type="text" id="lname" required placeholder="Last Name" name="lname" size="30"> 
+                        <input type="text" id="mname" required placeholder="Middle Name" name="mname" size="30"> 
+                        <input type="text" id="suffix" placeholder="Suffix" name="suffix" size="7"> <br>
+                        <label for="gender">Gender:</label> 
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female 
+                        <button type="button" class="btn btn-success">Add</button>    
+                      </form>
+                      </div>
+                      <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-infor" data-dismiss="modal">Done</button>
+                      </div>
+                    </div>
+                  </div>
+    </div>       
+</div>-->
+
 
   <!--<label for="anniv">Wedding Anniversary</label>
   <input type="date" id="anniv" value="@mems.anniv" name="anniv"><br>

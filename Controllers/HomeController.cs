@@ -36,6 +36,11 @@ namespace CUMCIS.Controllers
             return View();
         }
 
+        public IActionResult children()
+        {
+            return View();
+        }
+
         public IActionResult Attendance()
         {
             InfoSys os = new InfoSys();
@@ -156,6 +161,6 @@ namespace CUMCIS.Controllers
             mi.addMyembroToDB (newmem);
             return Redirect("/Home/Modify");
         }
-
+        
     }
 }

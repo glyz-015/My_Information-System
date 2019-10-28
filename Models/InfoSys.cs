@@ -26,6 +26,15 @@ namespace CUMCIS.Models
             cmd.ExecuteNonQuery();
         }
 
+        public void addChildrenToDB (children ch)
+        {
+            var con = this.CreateConnection ();
+            string cmdText = $"insert into children values({ch.id}, '{ch.fname}', '{ch.lname}', '{ch.mname}', '{ch.suffix}', '{ch.gender}', '{ch.memid}')";
+            MySqlCommand cmd = new MySqlCommand (cmdText,con);
+
+            cmd.ExecuteNonQuery();
+        }
+
         public void UpdateMyembro(Myembro mem)
         {
             var con = this.CreateConnection();

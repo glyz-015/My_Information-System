@@ -11,19 +11,19 @@
   <li><a href="\Home\UserAccounts">User Accounts</a></li>
 </ul>
 
-<form action="/home/Search" method ="post" style="margin-width: 50%">
-  <div class="form-group">
+<form class="searchstyle" action="/home/Search" method ="post">
+      
       <input type="text" name="searchpamore" class="form-control" placeholder="Search Name....">
-  </div>
-  <input type="submit" class="btn btn-primary" value="Search">
+      <button type = "submit" class="btn btn-primary">Search</button>
+      <!--<input type="submit" class="btn btn-primary" value="Search">-->
 </form>
 
 
 
-  <table class="table table-hover" id="TableKo">
+  <table class="table table-hover" id="TableKo" style="overflow-x:auto;">
         <tr class="header"> 
           <th> </th>
-          <th>Name</th>
+          <th onclick="SortName(0)">Name</th>
           <th>Group</th>
           <th>Address</th>
           <th>Contact</th>
@@ -79,24 +79,46 @@
 
 
   <script>
-    function myFunction(){
-      var input, filter, table, tr, td, x, txtValue;
-      input = document.getElementById ("searchpamore");
-      filter = input.value.toUpperCase();
+    function SortName(n){
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
       table = document.getElementById("TableKo");
-      tr = table.getElementsByTagName("tr");
+      switching = true;
 
-      for (x=0; x < tr.lenth; x++){
-        td = tr[x].getElementsByTagName("td")[0];
-        if (td){
-          txtValue=td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1){
-            tr [i].style.display = "";
-          } else {
-            tr[x].style.display="none";
-          }
+      dir = "asc";
+
+      while (switching){
+        switching = false;
+        rows = table.rows;
+
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+
+            if (dir == "asc"){
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()){
+                shouldSwitch = true;
+                break;
+              }
+            } else if (dir == "desc"){
+              if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()){
+                shouldSwitch = true;
+                break;
+              }
+            }
         }
-      }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchcount ++;
+        } else {
+            if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+        }
+        
+        }
 
+      }
     }
   </script>

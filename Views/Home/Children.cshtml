@@ -1,0 +1,27 @@
+@{
+    var mem = (List<Myembro>)ViewData["mem"];
+    List<Myembro> myembros = (List<Myembro>) ViewData["Myembro"];
+}
+<h2>Add Children</h2>
+
+<form action="/home/addchildren" method = "post">
+    @foreach (var item in mem)
+    {
+        <input type="num" id="id" required placeholder="id" value=@item.id name="memid" size="4"><br>
+        <input type="text" id="fname" required placeholder="First Name" value="@item.fname" name="fname" size="30">
+        <input type="text" id="lname" required placeholder="Last Name" value="@item.lname" name="lname" size="30"> 
+
+    }
+            <label for="fname">Name: </label>
+                <input type="text" id="fname" required placeholder="First Name" name="fname" size="30">
+                <input type="text" id="lname" required placeholder="Last Name" name="lname" size="30"> 
+                <input type="text" id="mname" required placeholder="Middle Name" name="mname" size="30"> 
+                <input type="text" id="suffix" placeholder="Suffix" name="suffix" size="7"> <br>
+            <label for="gender">Gender:</label> 
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female 
+                
+                <button type="button" class="btn btn-success">Add</button>    
+                <br>
+                <br>
+    </form>
